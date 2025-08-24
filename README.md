@@ -14,7 +14,7 @@ A simple but powerful browser extension that adds a "Play in Stremio" button dir
 
 ## ⚠️ Important: Stremio Version Limitation
 
-This extension is confirmed to work perfectly with the stable **Stremio v4**.
+This extension is confirmed to work perfectly with the stable **Stremio v4.4**.
 
 Due to a bug in the beta version of Stremio, this extension **does not currently work with Stremio v5 Beta**. The v5 Beta fails to correctly handle the external `stremio://` links that this extension generates. A bug report has been filed, and this notice will be removed if the issue is resolved in a future Stremio update.
 
