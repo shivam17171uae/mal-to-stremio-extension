@@ -9,7 +9,7 @@
       "matches": [
         "https://myanimelist.net/anime/*",
         "https://myanimelist.net/topanime.php*",
-        "https://anilist.co/anime/*"
+        "https://anilist.co/*"
       ],
       "js": ["content.js"]
     }

@@ -3,15 +3,17 @@ function main() {
   console.log("Stremio Universal Extension: Starting...");
 
   const hostname = window.location.hostname;
-  const pathname = window.location.pathname;
 
   if (hostname === "myanimelist.net") {
+    // MyAnimeList doesn't use modern SPA navigation, so its logic can stay simple.
+    const pathname = window.location.pathname;
     if (pathname.startsWith("/anime/")) {
       handleMalDetailPage();
     } else if (pathname.startsWith("/topanime.php")) {
       handleMalListPage();
     }
   } else if (hostname === "anilist.co") {
+    // AniList is a Single Page Application and needs a more robust handler.
     handleAniList();
   }
 }
@@ -55,18 +57,38 @@ function handleMalListPage() {
 
 
 // ===================================================================
-// --- AniList Handler ---
+// --- AniList Handler --- (FIXED FOR SPA)
 // ===================================================================
 function handleAniList() {
-  const observer = new MutationObserver((mutations, obs) => {
-    const container = document.querySelector('.actions');
-    if (container) {
-      if (!document.getElementById('stremio-button-detail')) {
+  // This function will decide if the button should be added or removed.
+  const manageAniListButton = () => {
+    const buttonExists = !!document.getElementById('stremio-button-detail');
+
+    // Check if the current URL is an anime detail page.
+    if (window.location.pathname.startsWith("/anime/")) {
+      const container = document.querySelector('.actions');
+      // If the right container exists and our button isn't already there, add it.
+      if (container && !buttonExists) {
         createLargeStremioButton(container, "anilist");
       }
+    } 
+    // If we are NOT on an anime page...
+    else {
+      // ...and our button happens to exist, remove it.
+      if (buttonExists) {
+        document.getElementById('stremio-button-detail').remove();
+      }
     }
-  });
+  };
+
+  // Create an observer that will call our function every time the page DOM changes.
+  const observer = new MutationObserver(manageAniListButton);
+
+  // Start observing the entire document body for any changes in its structure.
   observer.observe(document.body, { childList: true, subtree: true });
+
+  // Run the function once at the start, just in case the page is already loaded.
+  manageAniListButton();
 }
 
 // ===================================================================
