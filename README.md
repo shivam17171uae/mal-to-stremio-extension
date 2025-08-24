@@ -1,8 +1,13 @@
-# MAL to Stremio Browser Extension
+# MAL & AniList to Stremio Browser Extension
 
-A simple but powerful browser extension that adds a "Play in Stremio" button directly to MyAnimeList anime pages that, when clicked, launches the Stremio app and takes you directly to that anime's detail page, saving you from having to search for it manually.
+A powerful browser extension that provides a seamless bridge between discovering anime and watching it. It adds a "Watch on Stremio" button directly to **MyAnimeList** and **AniList** pages.
 
-<img width="1620" height="998" alt="mainScreen" src="https://github.com/user-attachments/assets/56916a4c-964c-432d-98be-8436ad0b524e" />
+When clicked, the button instantly launches the Stremio desktop app and takes you directly to that anime's detail page, saving you from having to search for it manually.
+
+<img width="853" height="526" alt="Screenshot 2025-08-24 221512" src="https://github.com/user-attachments/assets/81ace0be-f133-4370-b6fa-4e75b9165979" />
+<img width="834" height="537" alt="Screenshot 2025-08-24 221548" src="https://github.com/user-attachments/assets/06e05d03-d180-49c7-863d-7d1e98517b2f" />
+<img width="842" height="642" alt="Screenshot 2025-08-24 221653" src="https://github.com/user-attachments/assets/08dadb9a-65f7-4484-8db6-f2e9d011f350" />
+
 
 ---
 
@@ -16,8 +21,14 @@ Due to a bug in the beta version of Stremio, this extension **does not currently
 
 ## ✨ Features
 
--   Adds a stylish and elegant "Play in Stremio" button to the user actions block on MAL.
--   Uses a reliable API to map MyAnimeList IDs to Kitsu IDs, ensuring broad compatibility with anime addons.
+-   **Multi-Site Support:** Works on both **MyAnimeList** and **AniList**.
+-   **Full Integration:** Adds a large, clear "Watch on Stremio" button to anime detail pages.
+-   **Quick-Launch Icons:** Adds small, convenient Stremio icons to list pages on MyAnimeList, including:
+    -   **Top Anime** page
+    <img width="848" height="797" alt="Screenshot 2025-08-24 221712" src="https://github.com/user-attachments/assets/22684585-5747-47a4-a845-36f7dd78506e" />
+
+-   **Adaptive Design:** The button's style automatically changes to match the look and feel of the site you're on, with a "glassmorphism" design for MAL and a native dark theme for AniList.
+-   **Smart ID Resolution:** Uses a reliable API to find the correct Kitsu ID for any anime, ensuring broad compatibility with Stremio's anime addons.
 
 ---
 
@@ -42,8 +53,7 @@ This extension is not on any official web store. To install it, you need to load
 #### **Step 1: Download the Code**
 
 -   Click the green **`< > Code`** button at the top of this GitHub page.
--   Select **"Download ZIP"**
-
+-   Select **"Download ZIP"**.
 
 #### **Step 2: Unzip the Folder**
 
@@ -62,13 +72,12 @@ This extension is not on any official web store. To install it, you need to load
 
 <img width="1690" height="342" alt="Screenshot 2025-08-24 080349" src="https://github.com/user-attachments/assets/939f6e07-c1d5-42d4-96b5-6c4e6e3d2fd8" />
 
-
 3.  Click the **"Load unpacked"** button that appeared.
 
 4.  A file browser window will open. Navigate to the folder where you unzipped the project.
 5.  Select the **entire folder** (the one that contains `manifest.json`, e.g., `mal-to-stremio-extension-main`) and click "Select Folder."
 
-The "MAL to Stremio" extension will now appear in your list of extensions and is ready to use! Just visit any anime page on MyAnimeList, and the button will appear automatically.
+The "MAL & AniList to Stremio" extension will now appear in your list of extensions and is ready to use! Just visit any of the supported pages, and the button will appear automatically.
 
 ---
 
