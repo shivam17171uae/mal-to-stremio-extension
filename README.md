@@ -1,14 +1,8 @@
 # MAL to Stremio Browser Extension
 
-A simple but powerful browser extension that adds a "Play in Stremio" button directly to MyAnimeList anime pages, providing a seamless bridge between discovering anime and watching it.
+A simple but powerful browser extension that adds a "Play in Stremio" button directly to MyAnimeList anime pages that, when clicked, launches the Stremio app and takes you directly to that anime's detail page, saving you from having to search for it manually.
 
-![Screenshot of the button on MyAnimeList](https://i.imgur.com/your-screenshot-link.png) 
-<!-- 
-  TODO for you: 
-  1. Take a nice screenshot of your final button on a MAL page.
-  2. Upload it to a free image host like Imgur.com.
-  3. Replace the link above with your screenshot's link.
--->
+<img width="1620" height="998" alt="mainScreen" src="https://github.com/user-attachments/assets/56916a4c-964c-432d-98be-8436ad0b524e" />
 
 ---
 
@@ -24,9 +18,6 @@ Due to a bug in the beta version of Stremio, this extension **does not currently
 
 -   Adds a stylish and elegant "Play in Stremio" button to the user actions block on MAL.
 -   Uses a reliable API to map MyAnimeList IDs to Kitsu IDs, ensuring broad compatibility with anime addons.
--   Features a polished "glassmorphism" design that fits modern aesthetics.
--   Includes a local SVG icon for fast loading and a professional look.
--   Lightweight and efficient.
 
 ---
 
@@ -51,9 +42,8 @@ This extension is not on any official web store. To install it, you need to load
 #### **Step 1: Download the Code**
 
 -   Click the green **`< > Code`** button at the top of this GitHub page.
--   Select **"Download ZIP"**.
+-   Select **"Download ZIP"**
 
-![Download ZIP Screenshot](https://i.imgur.com/hWWylf7.png) <!-- This is a generic image, you can leave it -->
 
 #### **Step 2: Unzip the Folder**
 
@@ -70,7 +60,8 @@ This extension is not on any official web store. To install it, you need to load
 
 2.  In the top-right corner of the extensions page, find the **"Developer mode"** toggle and make sure it is switched **ON**. This will reveal new buttons.
 
-    ![Developer Mode Screenshot](https://i.imgur.com/3QMLJ6g.png) <!-- This is a generic image, you can leave it -->
+<img width="1690" height="342" alt="Screenshot 2025-08-24 080349" src="https://github.com/user-attachments/assets/939f6e07-c1d5-42d4-96b5-6c4e6e3d2fd8" />
+
 
 3.  Click the **"Load unpacked"** button that appeared.
 
