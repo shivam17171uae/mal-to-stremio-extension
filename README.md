@@ -5,7 +5,7 @@ A powerful browser extension that provides a seamless bridge between discovering
 When clicked, the button instantly launches the Stremio desktop app and takes you directly to that anime's detail page, saving you from having to search for it manually.
 
 <img width="853" height="526" alt="Screenshot 2025-08-24 221512" src="https://github.com/user-attachments/assets/81ace0be-f133-4370-b6fa-4e75b9165979" />
-<img width="834" height="537" alt="Screenshot 2025-08-24 221548" src="https://github.com/user-attachments/assets/06e05d03-d180-49c7-863d-7d1e98517b2f" />
+
 <img width="842" height="642" alt="Screenshot 2025-08-24 221653" src="https://github.com/user-attachments/assets/08dadb9a-65f7-4484-8db6-f2e9d011f350" />
 
 
