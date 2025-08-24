@@ -66,7 +66,7 @@ function main(targetNode) {
   stremioButton.href = '#';
   stremioButton.title = 'Searching...';
 
-  const iconUrl = chrome.runtime.getURL('stremio.svg');
+  const iconUrl = chrome.runtime.getURL('icon48.png');
   
   stremioButton.innerHTML = `
       <img src="${iconUrl}" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
