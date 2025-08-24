@@ -1,12 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "MAL to Stremio",
-  "version": "1.5",
-  "description": "Adds a 'Play in Stremio' button to MyAnimeList anime pages.",
+  "name": "MAL & AniList to Stremio",
+  "version": "4.5.0",
+  "description": "Adds a 'Watch on Stremio' button to MyAnimeList and AniList pages.",
   
   "content_scripts": [
     {
-      "matches": ["https://myanimelist.net/anime/*"],
+      "matches": [
+        "https://myanimelist.net/anime/*",
+        "https://myanimelist.net/topanime.php*",
+        "https://anilist.co/anime/*"
+      ],
       "js": ["content.js"]
     }
   ],
@@ -14,7 +18,10 @@
   "web_accessible_resources": [
     {
       "resources": ["icon48.png"],
-      "matches": ["https://myanimelist.net/*"]
+      "matches": [
+        "https://myanimelist.net/*",
+        "https://anilist.co/*"
+      ]
     }
   ],
 
